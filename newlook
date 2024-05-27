@@ -1,0 +1,7 @@
+#!/bin/sh
+
+wall=$(find ~/Pictures/wallpaper/ -type f -name "*.png" -o -name "*.jpg" | shuf -n 1)
+wal -c
+wal -i $wall
+plasma-apply-wallpaperimage $wall
+# xdotool key super+F5
